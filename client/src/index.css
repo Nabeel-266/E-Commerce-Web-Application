@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts Families */
+  --font-k2d: "K2D", sans-serif;
+  --font-comfortaa: "Comfortaa", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+
+  /* Colors */
+  --color-primary-01: #ff6a38;
+  --color-primary-02: #ff9028;
+  --color-secondary: #787878;
+  --color-dark: #303030;
+  --color-light: #ffffff;
+}
+
+html {
+  font-size: 10px;
+  font-family: "K2D", sans-serif;
+  scroll-behavior: smooth;
+}
