@@ -10,14 +10,14 @@ const Navbar = () => {
   const routeLocation = location.pathname;
 
   return (
-    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[999] bg-transparent backdrop-blur-lg border-b-[0rem] border-[333]">
-      <div className="w-[96%] px-[4rem] h-[6rem] flex items-center justify-between">
+    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[999] bg-transparent backdrop-blur-lg border-b-[0rem] border-[333] px-[4%]">
+      <div className="w-full px-[2%] h-[6.6rem] flex items-center justify-between border-b-[0.1rem] border-secondary-03">
         {/* Navbar Left */}
         <div className="w-[70%] h-full flex items-center gap-[4.5rem]">
           {/* LOGO */}
           <NavLink to="/">
             <div className="flex items-end gap-[0.3rem]">
-              <h3 className="text-dark text-[3.3rem] leading-[3.3rem] font-k2d font-bold">
+              <h3 className="text-darker text-[3.4rem] leading-[3.4rem] font-bricolage font-bold">
                 Trend
                 <span className="text-primary-01">ify</span>.
               </h3>
@@ -25,25 +25,25 @@ const Navbar = () => {
           </NavLink>
 
           {/* Navigations */}
-          <nav className="navigations mt-[0.6rem]">
-            <ul className="flex items-center gap-[1.2rem] mt-[0.35rem]">
+          <nav className="navigations mt-[0.5rem]">
+            <ul className="flex items-center gap-[1rem] mt-[0.35rem]">
               {[
-                ["Collection", "/collection"],
-                ["Men", "/collection?men=true"],
-                ["Women", "/collection"],
-                ["Kids", "/collection"],
-                ["About", "/about"],
-                ["Contact", "/contact"],
+                ["COLLECTION", "/collection"],
+                ["MEN", "/collection"],
+                ["WOMEN", "/collection"],
+                ["KIDS", "/collection"],
+                ["ABOUT", "/about"],
+                ["CONTACT", "/contact"],
               ].map(([tilte, path], index) => (
                 <li
                   key={index}
-                  className={`nav-item font-k2d font-medium hover:text-primary-01 transition-all duration-300 ${
-                    routeLocation !== path ? "text-dark" : "text-primary-01"
+                  className={`nav-item font-medium hover:text-primary-01 transition-all duration-300 ${
+                    routeLocation !== path ? "text-darker" : "text-primary-01"
                   } `}
                 >
                   <NavLink
                     to={path}
-                    className="nav-link text-[1.8rem] leading-[1.8rem] text-center px-[0.6rem] whitespace-nowrap"
+                    className="nav-link text-[1.5rem] leading-[1.6rem] text-center px-[0.6rem] whitespace-nowrap"
                   >
                     {tilte}
                   </NavLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 alt="cart-icon"
                 className="w-[2.1rem] select-none"
               />
-              <span className="absolute z-10 -bottom-[0.6rem] -right-[0.7rem] text-center text-light text-[1.1rem] leading-[1.1rem] font-bold bg-dark px-[0.5rem] pt-[0.3rem] pb-[0.4rem] rounded-full">
+              <span className="absolute z-10 -bottom-[0.6rem] -right-[0.7rem] text-center text-light text-[1.1rem] leading-[1.1rem] font-bold bg-darker px-[0.5rem] pt-[0.3rem] pb-[0.4rem] rounded-full">
                 0
               </span>
             </Link>

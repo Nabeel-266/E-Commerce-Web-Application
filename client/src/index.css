@@ -2,20 +2,23 @@
 
 @theme {
   /* Fonts Families */
-  --font-k2d: "K2D", sans-serif;
-  --font-comfortaa: "Comfortaa", sans-serif;
-  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-prata: "Prata", serif;
+  --font-bricolage: "Bricolage Grotesque", sans-serif;
+  --font-lexend: "Lexend", sans-serif;
 
   /* Colors */
   --color-primary-01: #ff6a38;
   --color-primary-02: #ff9028;
-  --color-secondary: #787878;
-  --color-dark: #303030;
+  --color-secondary-01: #787878;
+  --color-secondary-02: #b8b8b8;
+  --color-secondary-03: #f0f0f0;
+  --color-dark: #505050;
+  --color-darker: #333333;
   --color-light: #ffffff;
 }
 
 html {
   font-size: 10px;
-  font-family: "K2D", sans-serif;
+  font-family: "Lexend", sans-serif;
   scroll-behavior: smooth;
 }
