@@ -1,32 +1,30 @@
 import { Link, NavLink, useLocation } from "react-router";
 
 // Import React Icons
-import SearchIcon from "../../assets/Icons/search_icon.png";
-import ProfileIcon from "../../assets/Icons/profile_icon.png";
-import CartIcon from "../../assets/Icons/cart_icon.png";
+import SearchIcon from "../../assets/Icons/search.png";
+import ProfileIcon from "../../assets/Icons/profile.png";
+import CartIcon from "../../assets/Icons/cart.png";
 
 const Navbar = () => {
   const location = useLocation();
   const routeLocation = location.pathname;
 
   return (
-    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[999] bg-transparent backdrop-blur-lg border-b-[0rem] border-[333] px-[4%]">
+    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[999] backdrop-blur-3xl border-b-[0rem] border-[333] px-[4%] bg-white/80">
       <div className="w-full px-[2%] h-[6.6rem] flex items-center justify-between border-b-[0.1rem] border-secondary-03">
         {/* Navbar Left */}
         <div className="w-[70%] h-full flex items-center gap-[4.5rem]">
           {/* LOGO */}
           <NavLink to="/">
-            <div className="flex items-end gap-[0.3rem]">
-              <h3 className="text-darker text-[3.4rem] leading-[3.4rem] font-bricolage font-bold">
-                Trend
-                <span className="text-primary-01">ify</span>.
-              </h3>
-            </div>
+            <h3 className="text-darker text-[3.4rem] leading-[3.4rem] font-bricolage font-bold">
+              Trend
+              <span className="text-primary-01">ify</span>.
+            </h3>
           </NavLink>
 
           {/* Navigations */}
           <nav className="navigations mt-[0.5rem]">
-            <ul className="flex items-center gap-[1rem] mt-[0.35rem]">
+            <ul className="flex items-center gap-[0.8rem] mt-[0.35rem]">
               {[
                 ["COLLECTION", "/collection"],
                 ["MEN", "/collection"],
@@ -37,13 +35,13 @@ const Navbar = () => {
               ].map(([tilte, path], index) => (
                 <li
                   key={index}
-                  className={`nav-item font-medium hover:text-primary-01 transition-all duration-300 ${
+                  className={`nav-item font-medium tracking-wide hover:text-primary-01 transition-all duration-300 ${
                     routeLocation !== path ? "text-darker" : "text-primary-01"
                   } `}
                 >
                   <NavLink
                     to={path}
-                    className="nav-link text-[1.5rem] leading-[1.6rem] text-center px-[0.6rem] whitespace-nowrap"
+                    className="nav-link text-[1.6rem] leading-[1.6rem] text-center px-[0.6rem] whitespace-nowrap"
                   >
                     {tilte}
                   </NavLink>
