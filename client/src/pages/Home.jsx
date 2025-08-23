@@ -89,7 +89,7 @@ const Home = () => {
                   </abbr>
                 </h3>
                 <p className="text-[1.5rem] leading-[2rem] text-darker font-semibold mb-[0.5rem]">
-                  $64
+                  PKR 1,499
                 </p>
               </div>
             ))}

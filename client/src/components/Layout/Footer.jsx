@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
-    <div className="w-full px-[6%] bg-gradient-to-b from-light to-secondary-03">
+    <div className="w-full px-[6%] bg-gradient-to-b from-light to-secondary-03 border-b-[0.3rem] border-darker border-dotted">
       <div className="w-full h-full grid grid-cols-4 pt-[4rem]">
         <div className="col-span-2 px-[4%]">
           {/* LOGO */}
