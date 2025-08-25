@@ -43,7 +43,7 @@ const About = () => {
 
           {/* Text Side */}
           <div className="w-[50%] flex flex-col items-start justify-start gap-[2rem] mt-[2rem]">
-            <h2 className="text-[3.5rem] leading-[3.5rem] font-federant font-bold text-darker tracking-wide">
+            <h2 className="text-[3rem] leading-[3rem] font-federant font-bold text-darker tracking-wide">
               Who We Are
             </h2>
 
@@ -80,7 +80,7 @@ const About = () => {
         {/* Mission & Vision Section */}
         <section className="flex items-center justify-center gap-[8%] px-[4%] py-[2rem]">
           <div className="py-[1rem]">
-            <h3 className="text-[3rem] font-federant font-semibold text-darker">
+            <h3 className="text-[2.6rem] font-federant font-semibold text-darker">
               Our Mission
             </h3>
             <p className="text-[1.6rem] leading-[2.2rem] font-medium text-dark">
@@ -94,7 +94,7 @@ const About = () => {
           </div>
 
           <div className="py-[1rem]">
-            <h3 className="text-[3rem] font-federant font-semibold text-darker">
+            <h3 className="text-[2.6rem] font-federant font-semibold text-darker">
               Our Vision
             </h3>
             <p className="text-[1.6rem] leading-[2.2rem] font-medium text-dark">
@@ -111,7 +111,7 @@ const About = () => {
 
         {/* Why Choose Us Section */}
         <section className="w-full flex flex-col items-start justify-start gap-[4rem] px-[4%] mt-[4rem]">
-          <h2 className="text-[3.5rem] leading-[3.5rem] font-federant font-bold text-darker tracking-wide">
+          <h2 className="text-[3rem] leading-[3rem] font-federant font-bold text-darker tracking-wide">
             Why Choose Us
           </h2>
 
@@ -135,7 +135,7 @@ const About = () => {
             ].map(({ Icon, title, text }, index) => (
               <div
                 key={index}
-                className="w-full flex flex-col items-center justify-center gap-[1rem] text-center px-[2rem] pt-[1.8rem] pb-[2rem] bg-secondary-03 rounded-xl"
+                className="w-full flex flex-col items-center justify-center gap-[1rem] text-center px-[2rem] pt-[1.8rem] pb-[2rem] bg-secondary-04 rounded-xl"
               >
                 <div className="bg-darker p-[1rem] rounded-3xl">
                   <Icon color="#ff6a38" size={30} strokeWidth={2} />
@@ -168,66 +168,3 @@ const About = () => {
 };
 
 export default About;
-
-//  <section className="bg-gray-50 py-16 px-6 md:px-20">
-//           <div className="max-w-5xl mx-auto text-center">
-//             {/* Heading */}
-//             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-//               About Trendify
-//             </h2>
-//             <p className="text-lg text-gray-600 mb-12">
-//               Welcome to{" "}
-//               <span className="font-semibold text-gray-800">Trendify</span>,
-//               your one-stop destination for the latest fashion trends. We aim to
-//               make shopping simple, enjoyable, and stylish for everyone.
-//             </p>
-
-//             {/* Mission / Vision */}
-//             <div className="grid md:grid-cols-3 gap-8 text-left">
-//               <div className="bg-white p-6 shadow rounded-2xl">
-//                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-//                   Our Mission
-//                 </h3>
-//                 <p className="text-gray-600">
-//                   To provide trendy, high-quality fashion at affordable prices,
-//                   making style accessible to everyone across Pakistan and
-//                   beyond.
-//                 </p>
-//               </div>
-
-//               <div className="bg-white p-6 shadow rounded-2xl">
-//                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-//                   Our Vision
-//                 </h3>
-//                 <p className="text-gray-600">
-//                   To become a leading fashion eCommerce brand that inspires
-//                   confidence and self-expression through clothing and
-//                   accessories.
-//                 </p>
-//               </div>
-
-//               <div className="bg-white p-6 shadow rounded-2xl">
-//                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-//                   Our Values
-//                 </h3>
-//                 <p className="text-gray-600">
-//                   Trendify stands for quality, trust, and customer satisfaction.
-//                   We believe fashion should be sustainable, modern, and
-//                   inclusive.
-//                 </p>
-//               </div>
-//             </div>
-
-//             {/* Customer Support Section */}
-//             <div className="mt-16">
-//               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-//                 Customer Support
-//               </h3>
-//               <p className="text-gray-600 max-w-3xl mx-auto">
-//                 Got questions? Our friendly support team is here to assist you
-//                 with returns, exchanges, or product inquiries. Your satisfaction
-//                 is our top priority.
-//               </p>
-//             </div>
-//           </div>
-//         </section>

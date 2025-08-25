@@ -11,7 +11,8 @@
   --color-primary-02: #ff9028;
   --color-secondary-01: #787878;
   --color-secondary-02: #b8b8b8;
-  --color-secondary-03: #f0f0f0;
+  --color-secondary-03: #d8d8d8;
+  --color-secondary-04: #f0f0f0;
   --color-dark: #585858;
   --color-darker: #333333;
   --color-light: #ffffff;
@@ -21,4 +22,8 @@ html {
   font-size: 10px;
   font-family: "Outfit", sans-serif;
   scroll-behavior: smooth;
+}
+
+.input-appearance::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

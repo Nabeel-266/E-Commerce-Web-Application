@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
-    <div className="w-full px-[6%] bg-gradient-to-b from-light to-secondary-03 border-b-[0.3rem] border-darker border-dotted">
+    <div className="w-full px-[6%] bg-gradient-to-b from-light to-secondary-04 border-b-[0.3rem] border-darker border-dotted">
       <div className="w-full h-full grid grid-cols-4 pt-[4rem]">
         <div className="col-span-2 px-[4%]">
           {/* LOGO */}
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-span-4 w-full flex items-center justify-between gap-[0.5rem] mt-[3rem] px-[2%] py-[2.5rem] bordr-t-[0.2rem] border-secondary-03 text-[1.5rem] text-darker">
+        <div className="col-span-4 w-full flex items-center justify-between gap-[0.5rem] mt-[3rem] px-[2%] py-[2.5rem] bordr-t-[0.2rem] border-secondary-04 text-[1.5rem] text-darker">
           <span>
             &copy; Copyright {new Date().getFullYear()} Trendify. All rights
             reserved

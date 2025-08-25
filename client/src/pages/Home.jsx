@@ -59,7 +59,7 @@ const Home = () => {
       {/* Latest Collection Cont */}
       <div className="flex flex-col gap-[4rem] px-[6%] ">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-03 pt-[5rem]">
+        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[5rem]">
           <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant  tracking-wide">
             <span className="text-dark">Latest</span> Collections
           </h2>
@@ -100,7 +100,7 @@ const Home = () => {
       {/* Top Selling Cont */}
       <div className="flex flex-col gap-[4rem] px-[6%]">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-03 pt-[5rem]">
+        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[5rem]">
           <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant tracking-wide">
             <span className="text-dark">Top</span> Selling
           </h2>
@@ -141,7 +141,7 @@ const Home = () => {
       {/* Services & Support Cont */}
       <div className="flex flex-col gap-[6rem] px-[6%] bg-darker">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-03 pt-[7rem]">
+        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[7rem]">
           <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-light font-federant tracking-wide">
             <span className="text-secondary-02">Services</span> & Support
           </h2>
@@ -188,7 +188,7 @@ const Home = () => {
                 <h3 className="text-[2rem] leading-[2.2rem] font-bold text-light mb-[0.5rem]">
                   {item.title}
                 </h3>
-                <p className="text-[1.6rem] leading-[1.8rem] text-secondary-03 font-medium">
+                <p className="text-[1.6rem] leading-[1.8rem] text-secondary-04 font-medium">
                   {item.description}
                 </p>
               </div>
@@ -200,7 +200,7 @@ const Home = () => {
       {/* Subscribe Now Cont */}
       <div className="px-[6%]">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-03 pt-[7rem] pb-[6rem]">
+        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[7rem] pb-[6rem]">
           <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant tracking-wide">
             <span className="text-dark">Subscribe</span> Now
           </h2>
