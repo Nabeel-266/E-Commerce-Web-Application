@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Collection from "./pages/Collection";
 import Contact from "./pages/Contact";
 import Footer from "./components/Layout/Footer";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const AppLayout = () => {
   return (
@@ -38,6 +40,14 @@ const browserRouter = createBrowserRouter([
       {
         path: "/collection",
         element: <Collection />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

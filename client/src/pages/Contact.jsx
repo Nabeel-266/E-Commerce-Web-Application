@@ -29,7 +29,10 @@ const Contact = () => {
             Just reach out how we can help you.
           </p>
 
-          <form className="flex flex-col gap-[1.4rem] py-[1rem] tabletLg:pr-[8%] mt-[1rem]">
+          <form
+            action="#"
+            className="w-full flex flex-col gap-[1.4rem] py-[1rem] tabletLg:pr-[8%] mt-[1.4rem]"
+          >
             {/* Fullname Input Cont */}
             <div className="w-full space-y-[0.8rem]">
               <div className="input w-full">
@@ -45,7 +48,7 @@ const Contact = () => {
                   id="fullname"
                   placeholder="Enter your full name"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1.1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -67,7 +70,7 @@ const Contact = () => {
                   id="email"
                   placeholder="Enter your email"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1.1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -89,7 +92,7 @@ const Contact = () => {
                   id="phoneNumber"
                   placeholder="Enter your contact number"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1.1rem] text-[1.6rem] leading-[1.6rem] rounded-full input-appearance border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full input-appearance border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -110,7 +113,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="How can we help you?"
-                  className={`w-full min-h-[9rem] max-h-[9rem] text-dark font-medium p-[1rem] text-[1.6rem] leading-[2.2rem] rounded-3xl border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem] `}
+                  className={`w-full min-h-[9rem] max-h-[9rem] text-dark font-medium px-[1.4rem] py-[1rem] text-[1.6rem] leading-[2.2rem] rounded-3xl border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem] `}
                 />
               </div>
 
@@ -118,6 +121,7 @@ const Contact = () => {
             </div>
 
             <button
+              type="button"
               className={`w-full flex items-center justify-center gap-[1rem] px-[3rem] py-[1.2rem] mt-[0.5rem] text-[1.8rem] leading-[1.8rem] tracking-wider font-bold rounded-full transition-all ${
                 true
                   ? "text-light bg-darker active:scale-[0.98] active:bg-dark cursor-pointer"

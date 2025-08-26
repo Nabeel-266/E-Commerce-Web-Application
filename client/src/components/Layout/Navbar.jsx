@@ -62,7 +62,7 @@ const Navbar = () => {
               />
             </Link>
 
-            <Link to="/">
+            <Link to="/login">
               <img
                 src={ProfileIcon}
                 alt="profile-icon"

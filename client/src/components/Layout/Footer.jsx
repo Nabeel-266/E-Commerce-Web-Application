@@ -32,8 +32,6 @@ const Footer = () => {
               ["ABOUT US", "/about"],
               ["CONTACT", "/contact"],
               ["YOUR CART", "/contact"],
-              ["LOGIN", "/contact"],
-              ["CREATE ACCOUNT", "/contact"],
             ].map(([title, path], index) => (
               <li
                 key={index}
