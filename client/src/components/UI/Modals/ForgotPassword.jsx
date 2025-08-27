@@ -1,0 +1,69 @@
+import { MoveLeft, X } from "lucide-react";
+
+const ForgotPassword = ({ setIsModalOpen }) => {
+  return (
+    <div className="w-full h-dvh fixed z-[999] top-0 left-0 flex items-center justify-center bg-black/50 backdrop-blur-md">
+      <button
+        className="absolute top-0 left-0 text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[1rem] py-[0.5rem] rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+        onClick={() => setIsModalOpen(false)}
+      >
+        <MoveLeft size={30} />
+      </button>
+
+      <div className="w-full max-w-[55rem] p-[2rem] rounded-xl bg-light/90 mb-[0rem] shadow-black/50 shadow-2xl">
+        {/* Header */}
+        <header className="w-full px-[0.5rem] pb-[1.3rem] border-b-[0.1rem] border-secondary-01 flex items-center justify-between">
+          <h1 className="text-[2.5rem] leading-[2.5rem] text-darker font-federant font-semibold">
+            Forgot Password
+          </h1>
+
+          <button
+            className="text-[1.8rem] text-darker font-semibold font-bricolage rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+            onClick={() => setIsModalOpen(false)}
+          >
+            <X />
+          </button>
+        </header>
+
+        {/* Guidance Cont */}
+        <div className="w-full flex flex-col items-start mt-[1.5rem]">
+          <h6 className="text-[1.7rem] font-semibold font-bricolage text-darker">
+            Have you forgotten your account password?
+          </h6>
+
+          <p className="text-[1.4rem] leading-[2rem] font-medium font-bricolage text-darker mt-[0.5rem]">
+            No worries! Just enter your email address below, and we’ll send you
+            a verification code. Use that code to confirm your identity and
+            reset your password securely.
+          </p>
+
+          {/* Input Cont */}
+          <div className="w-full space-y-[0.8rem] mt-[1.8rem]">
+            <p className="text-[1.5rem] leading-[2rem] font-medium font-bricolage text-darker">
+              Please! Enter the email address associated with your account
+            </p>
+
+            <div className="loginInput w-full relative flex items-center rounded-[0.5rem] border-[0.1rem] border-transparent focus-within:border-darker">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter the email address here..."
+                autoComplete="off"
+                className={`w-full outline-none text-dark font-medium px-[1rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-[0.4rem] border-[0.1rem] border-darker placeholder:text-dark peer`}
+              />
+            </div>
+
+            {/* {error && error[0] === "name" && <FieldError error={error[1]} />} */}
+          </div>
+
+          <button className="w-full text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[2rem] py-[0.8rem] mt-[1rem] rounded-full cursor-pointer active:scale-[0.99] transition-all">
+            Get Verification Code
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ForgotPassword;

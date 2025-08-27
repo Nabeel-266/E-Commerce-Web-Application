@@ -12,11 +12,11 @@ import Register from "./pages/Register";
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="w-full relative z-[1]">
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 

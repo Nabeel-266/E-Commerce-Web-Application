@@ -2,11 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
 import BackgroundImage from "../assets/login-bg.png";
-import ForgotPassword from "../components/UI/Modals/ForgotPassword";
 
-const Login = () => {
+const Register = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
-  const [isForgotPassModalOpen, setIsForgotPassModalOpen] = useState(false);
 
   return (
     <div className="w-full min-h-dvh pt-[6.6rem]">
@@ -16,10 +14,10 @@ const Login = () => {
           backgroundImage: `url(${BackgroundImage})`,
         }}
       >
-        {/* Login Form Cont */}
-        <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[5rem] rounded-2xl">
+        {/* Sign up Form Cont */}
+        <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[6rem] rounded-2xl">
           <h2 className="text-[3.6rem] text-darker font-bold font-federant">
-            Login
+            Sign Up
           </h2>
 
           <form
@@ -28,9 +26,25 @@ const Login = () => {
             }}
             className="min-w-[40rem] flex flex-col tabletLg:pr-[8%] mt-[3rem]"
           >
-            {/* Email Input Cont */}
+            {/* Full Name Input Cont */}
             <div className="w-full space-y-[0.8rem]">
-              <div className="loginInput w-full relative flex items-center border-[0.1rem] border-transparent focus-within:border-darker rounded-[0.5rem]">
+              <div className="loginInput w-full relative border-[0.1rem] border-transparent focus-within:border-darker rounded-[0.5rem]">
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Your Name"
+                  autoComplete="off"
+                  className={`w-full outline-none text-dark font-medium px-[1.2rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-[0.4rem] border-[0.1rem] border-darker placeholder:text-dark peer`}
+                />
+              </div>
+
+              {/* {error && error[0] === "name" && <FieldError error={error[1]} />} */}
+            </div>
+
+            {/* Email Input Cont */}
+            <div className="w-full space-y-[0.8rem] mt-[1.4rem]">
+              <div className="loginInput w-full relative border-[0.1rem] border-transparent focus-within:border-darker rounded-[0.5rem]">
                 <input
                   type="email"
                   name="email"
@@ -55,11 +69,12 @@ const Login = () => {
                   autoComplete="off"
                   className={`w-full outline-none text-dark font-medium pl-[1.2rem] pr-[4rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-[0.4rem] border-[0.1rem] border-darker placeholder:text-dark peer`}
                 />
+
                 <div className="absolute right-[1rem] text-dark cursor-pointer">
                   {isPassVisible ? (
-                    <Eye size={20} onClick={(e) => setIsPassVisible(false)} />
+                    <Eye size={20} onClick={() => setIsPassVisible(false)} />
                   ) : (
-                    <EyeOff size={20} onClick={(e) => setIsPassVisible(true)} />
+                    <EyeOff size={20} onClick={() => setIsPassVisible(true)} />
                   )}
                 </div>
               </div>
@@ -67,20 +82,32 @@ const Login = () => {
               {/* {error && error[0] === "name" && <FieldError error={error[1]} />} */}
             </div>
 
-            {/* Forgot Password & Register Links */}
-            <div className="flex items-center justify-between mt-[0.8rem]">
-              <p
-                onClick={() => setIsForgotPassModalOpen(true)}
-                className="text-[1.45rem] font-medium text-darker cursor-pointer"
-              >
-                Forgot Password?
-              </p>
+            {/* Confirm Password Input Cont */}
+            <div className="w-full space-y-[0.8rem] mt-[1.4rem]">
+              <div className="loginInput w-full relative border-[0.1rem] border-transparent focus-within:border-darker rounded-[0.5rem]">
+                <input
+                  type={isPassVisible ? "text" : "password"}
+                  name="confirm_password"
+                  id="confirm_password"
+                  placeholder="Confirm Password"
+                  autoComplete="off"
+                  className={`w-full outline-none text-dark font-medium px-[1.2rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-[0.4rem] border-[0.1rem] border-darker placeholder:text-dark peer`}
+                />
+              </div>
 
+              {/* {error && error[0] === "name" && <FieldError error={error[1]} />} */}
+            </div>
+
+            {/* Forgot Password & Register Links */}
+            <div className="w-full flex items-center justify-between mt-[1rem] px-[0.2rem]">
+              <p className="text-[1.5rem] font-medium text-darker">
+                Already have an account?
+              </p>
               <Link
-                to={"/register"}
+                to={"/login"}
                 className="text-[1.45rem] font-medium text-darker"
               >
-                Create Account
+                Login Here
               </Link>
             </div>
 
@@ -91,17 +118,13 @@ const Login = () => {
                   : "bg-light text-dark cursor-not-allowed"
               }`}
             >
-              Sign In
+              Register
             </button>
           </form>
         </div>
       </div>
-
-      {isForgotPassModalOpen && (
-        <ForgotPassword setIsModalOpen={setIsForgotPassModalOpen} />
-      )}
     </div>
   );
 };
 
-export default Login;
+export default Register;

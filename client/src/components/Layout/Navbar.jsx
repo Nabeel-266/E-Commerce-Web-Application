@@ -10,7 +10,7 @@ const Navbar = () => {
   const routeLocation = location.pathname;
 
   return (
-    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[999] backdrop-blur-3xl border-b-[0rem] border-[333] px-[4%] bg-white/80">
+    <div className="w-full flex items-center justify-center fixed top-0 left-0 z-[499] backdrop-blur-3xl border-b-[0rem] border-[333] px-[4%] bg-white/80">
       <div className="w-full px-[2%] h-[6.6rem] flex items-center justify-between border-b-[0.1rem] border-secondary-04">
         {/* Navbar Left */}
         <div className="w-[70%] h-full flex items-center gap-[4.5rem]">
