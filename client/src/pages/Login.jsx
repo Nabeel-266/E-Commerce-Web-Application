@@ -2,11 +2,15 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
 import BackgroundImage from "../assets/login-bg.png";
+
+// Import Components
 import ForgotPassword from "../components/UI/Modals/ForgotPassword";
+import VerifyAccount from "../components/UI/Modals/VerifyAccount";
 
 const Login = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
-  const [isForgotPassModalOpen, setIsForgotPassModalOpen] = useState(false);
+  const [forgotPassModal, setForgotPassModal] = useState(false);
+  const [verifyAccountModal, setVerifyAccountModal] = useState(false);
 
   return (
     <div className="w-full min-h-dvh pt-[6.6rem]">
@@ -18,7 +22,7 @@ const Login = () => {
       >
         {/* Login Form Cont */}
         <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[5rem] rounded-2xl">
-          <h2 className="text-[3.6rem] text-darker font-bold font-federant">
+          <h2 className="text-[3.6rem] text-darker font-bold font-bricolage">
             Login
           </h2>
 
@@ -26,7 +30,7 @@ const Login = () => {
             onSubmit={(e) => {
               e.preventDefault();
             }}
-            className="min-w-[40rem] flex flex-col tabletLg:pr-[8%] mt-[3rem]"
+            className="min-w-[40rem] flex flex-col tabletLg:pr-[8%] mt-[2rem]"
           >
             {/* Email Input Cont */}
             <div className="w-full space-y-[0.8rem]">
@@ -70,7 +74,7 @@ const Login = () => {
             {/* Forgot Password & Register Links */}
             <div className="flex items-center justify-between mt-[0.8rem]">
               <p
-                onClick={() => setIsForgotPassModalOpen(true)}
+                onClick={() => setForgotPassModal(true)}
                 className="text-[1.45rem] font-medium text-darker cursor-pointer"
               >
                 Forgot Password?
@@ -97,9 +101,16 @@ const Login = () => {
         </div>
       </div>
 
-      {isForgotPassModalOpen && (
-        <ForgotPassword setIsModalOpen={setIsForgotPassModalOpen} />
-      )}
+      <ForgotPassword
+        forgotPassModal={forgotPassModal}
+        setForgotPassModal={setForgotPassModal}
+        setVerifyAccountModal={setVerifyAccountModal}
+      />
+
+      <VerifyAccount
+        verifyAccountModal={verifyAccountModal}
+        setVerifyAccountModal={setVerifyAccountModal}
+      />
     </div>
   );
 };

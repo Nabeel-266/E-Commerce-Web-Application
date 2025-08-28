@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
 import BackgroundImage from "../assets/login-bg.png";
+import VerifyAccount from "../components/UI/Modals/VerifyAccount";
 
 const Register = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
+  const [verifyAccountModal, setVerifyAccountModal] = useState(false);
 
   return (
     <div className="w-full min-h-dvh pt-[6.6rem]">
@@ -16,7 +18,7 @@ const Register = () => {
       >
         {/* Sign up Form Cont */}
         <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[6rem] rounded-2xl">
-          <h2 className="text-[3.6rem] text-darker font-bold font-federant">
+          <h2 className="text-[3.6rem] text-darker font-bold font-bricolage">
             Sign Up
           </h2>
 
@@ -24,7 +26,7 @@ const Register = () => {
             onSubmit={(e) => {
               e.preventDefault();
             }}
-            className="min-w-[40rem] flex flex-col tabletLg:pr-[8%] mt-[3rem]"
+            className="min-w-[40rem] flex flex-col tabletLg:pr-[8%] mt-[2rem]"
           >
             {/* Full Name Input Cont */}
             <div className="w-full space-y-[0.8rem]">
@@ -112,6 +114,7 @@ const Register = () => {
             </div>
 
             <button
+              onClick={() => setVerifyAccountModal(true)}
               className={`w-full flex items-center justify-center gap-[1rem] px-[3rem] py-[1.2rem] mt-[2.5rem] text-[1.8rem] leading-[1.8rem] tracking-wide font-medium font-bricolage rounded-full transition-all ${
                 true
                   ? "text-light bg-darker active:scale-[0.98] active:bg-dark cursor-pointer"
@@ -123,6 +126,11 @@ const Register = () => {
           </form>
         </div>
       </div>
+
+      <VerifyAccount
+        verifyAccountModal={verifyAccountModal}
+        setVerifyAccountModal={setVerifyAccountModal}
+      />
     </div>
   );
 };
