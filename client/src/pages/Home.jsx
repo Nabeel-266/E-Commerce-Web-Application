@@ -1,5 +1,6 @@
 import React from "react";
-import BannerImage from "../assets/Banner.png";
+import HeroMen from "../assets/Hero-Men.png";
+import HeroImageBg from "../assets/Hero-Bg.png";
 import TransitionButton from "../components/UI/Buttons/TransitionButton";
 
 // Import Image
@@ -13,64 +14,80 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Banner Cont */}
-      <div className="bannerCont w-full h-dvh text-9xl text-primary font-bold flex items-center justify-center pt-[6.6rem] px-[6%]">
-        {/* Banner Side 01 */}
-        <section className="w-[55%] h-full pl-[3%]">
-          <div className="mt-[16rem] flex flex-col items-start justify-start">
-            <p className="text-[2.1rem] font-semibold text-dark font- flex items-center mb-[2rem]">
-              OUR BEST <span className="text-primary-01"> SELLERS </span>
-            </p>
+      <div className="bannerCont min-h-dvh pt-[6.6rem]">
+        <div className="relative w-full h-[calc(100dvh-6.6rem)] text-9xl text-primary font-bold flex justify-center px-[6%]">
+          {/* Banner Text */}
+          <section className="w-full h-full">
+            <div className="mt-[10rem] flex flex-col items-start justify-start px-[5rem] py-[5rem]">
+              <p className="text-[2.2rem] font-semibold text-dark flex items-center mb-[2rem]">
+                OUR BEST SELLERS
+              </p>
 
-            <h1 className="text-[4.5rem] font-semibold tracking-wider text-darker font-federant mb-[0.4rem]">
-              Latest Arrivals
-            </h1>
+              <h1 className="text-[6rem] font-semibold tracking-wider text font-federant mb-[0.4rem] text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
+                Latest Arrivals
+              </h1>
 
-            <h5 className="text-[2rem] font-medium font-bricolage text-dark tracking-wide mb-[3.5rem]">
-              Discover Trends That Define Your Style
-            </h5>
+              <h5 className="text-[2rem] font-medium text-dark tracking-wide mb-[5rem]">
+                Discover Trends That Define Your Style
+              </h5>
 
-            <TransitionButton
-              text="SHOP NOW"
-              bgColor="primary-01"
-              textColor="light"
-              hoverBgColor="darker"
-              hoverTextColor="light"
-              px={2}
-              py={1.2}
-              rounded="full"
-              fontSize={1.7}
-              fontWeight="semibold"
-            />
-          </div>
-        </section>
+              <TransitionButton
+                text="SHOP NOW"
+                bgColor="primary-01"
+                textColor="light"
+                hoverBgColor="darker"
+                hoverTextColor="light"
+                px={3}
+                py={1.2}
+                rounded={10}
+                fontSize={1.8}
+                fontWeight="semibold"
+              />
+            </div>
+          </section>
 
-        {/* Banner Side 02 */}
-        <section className="w-[45%] h-full flex items-center justify-center">
-          <div className="w-full bg-amber-30 flex items-center justify-center">
+          {/* Banner Image Left
+          <div className="absolute top-0 left-0 h-full flex items-center justify-center">
             <img
-              src={BannerImage}
-              alt="banner-image"
-              className="w-full object-cover select-none bg-gradient-to-t from-primary-01 to-light rounded-full shadow-xl shadow-secondary-02"
+              src={HeroWomen}
+              alt="Hero-Women_Image"
+              className="h-full object-cover"
+            />
+          </div> */}
+
+          {/* Banner Image Right */}
+          <div
+            className="absolute px-[4rem] top-0 right-0 h-full flex items-center justify-center"
+            style={{
+              background: `url(${HeroImageBg})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            <img
+              src={HeroMen}
+              alt="Hero-Men_Image"
+              className="h-full object-cover"
             />
           </div>
-        </section>
+        </div>
       </div>
 
       {/* Latest Collection Cont */}
       <div className="flex flex-col gap-[4rem] px-[6%] ">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[5rem]">
-          <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant  tracking-wide">
-            <span className="text-dark">Latest</span> Collections
+        <section className="flex flex-col items-center justify-center gap-[0.2rem] pt-[5rem]">
+          <h2 className="text-[3.5rem] font-bold font-federant tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
+            Latest Collections
           </h2>
 
-          <p className="text-[1.9rem] leading-[1.9rem] font-medium text-secondary-01 tracking-wide">
+          <p className="text-[1.8rem] leading-[1.8rem] font-normal text-dark tracking-wide">
             Explore the latest trends and styles in our new collection.
           </p>
         </section>
 
         {/* Section Items */}
-        <section className="pb-[5rem] px-[2%]">
+        <section className="pb-[7rem] px-[2%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
             {/* Collection Item Example */}
             {Array.from({ length: 10 }).map((_, index) => (
@@ -100,18 +117,18 @@ const Home = () => {
       {/* Top Selling Cont */}
       <div className="flex flex-col gap-[4rem] px-[6%]">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[5rem]">
-          <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant tracking-wide">
-            <span className="text-dark">Top</span> Selling
+        <section className="flex flex-col items-center justify-center gap-[0.2rem] border-t-[0.1rem] border-secondary-04 pt-[4rem]">
+          <h2 className="text-[3.5rem] font-bold font-federant tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
+            Top Selling
           </h2>
 
-          <p className="text-[1.9rem] leading-[1.9rem] font-medium text-secondary-01 tracking-wide">
+          <p className="text-[1.8rem] leading-[1.8rem] font-normal text-dark tracking-wide">
             Discover our most popular products loved by customers.
           </p>
         </section>
 
         {/* Section Items */}
-        <section className="pb-[5rem] px-[2%]">
+        <section className="pb-[7rem] px-[2%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
             {/* Collection Item Example */}
             {Array.from({ length: 5 }).map((_, index) => (
@@ -141,9 +158,9 @@ const Home = () => {
       {/* Services & Support Cont */}
       <div className="flex flex-col gap-[6rem] px-[6%] bg-darker">
         {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[7rem]">
-          <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-light font-federant tracking-wide">
-            <span className="text-secondary-02">Services</span> & Support
+        <section className="flex flex-col items-center justify-center gap-[0.2rem] border-t-[0.1rem] border-secondary-04 pt-[5rem]">
+          <h2 className="text-[3.5rem] font-bold font-federant tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-light to-primary-01">
+            Services & Support
           </h2>
 
           <p className="text-[1.9rem] leading-[1.9rem] font-medium text-secondary-02 tracking-wide">
@@ -201,8 +218,8 @@ const Home = () => {
       <div className="px-[6%]">
         {/* Section Heading */}
         <section className="flex flex-col items-center justify-center gap-[1rem] border-t-[0.1rem] border-secondary-04 pt-[7rem] pb-[6rem]">
-          <h2 className="text-[3.5rem] leading-[3.2rem] font-bold text-darker font-federant tracking-wide">
-            <span className="text-dark">Subscribe</span> Now
+          <h2 className="text-[3.5rem] font-bold font-federant tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
+            Subscribe Now
           </h2>
 
           <p className="text-[1.9rem] leading-[1.9rem] font-medium text-secondary-01 tracking-wide">

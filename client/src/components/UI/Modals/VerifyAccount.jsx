@@ -23,7 +23,7 @@ const VerifyAccount = ({ verifyAccountModal, setVerifyAccountModal }) => {
       >
         {/* Header */}
         <header className="w-full px-[0.5rem] pb-[1.3rem] border-b-[0.1rem] border-secondary-01 flex items-center justify-between">
-          <h1 className="text-[2.5rem] leading-[2.5rem] text-darker font-federant font-semibold">
+          <h1 className="text-[2.4rem] leading-[2.4rem] text-darker font-bricolage font-semibold">
             Verify Account
           </h1>
 

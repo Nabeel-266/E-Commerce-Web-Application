@@ -27,9 +27,6 @@ const Navbar = () => {
             <ul className="flex items-center gap-[0.8rem] mt-[0.35rem]">
               {[
                 ["COLLECTION", "/collection"],
-                ["MEN", "/collection"],
-                ["WOMEN", "/collection"],
-                ["KIDS", "/collection"],
                 ["ABOUT", "/about"],
                 ["CONTACT", "/contact"],
               ].map(([tilte, path], index) => (
