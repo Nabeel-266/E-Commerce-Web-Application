@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="w-[70%] h-full flex items-center gap-[4.5rem]">
           {/* LOGO */}
           <NavLink to="/">
-            <h3 className="text-darker text-[3.4rem] leading-[3.4rem] font-bricolage font-bold">
+            <h3 className="text-darker text-[3.4rem] leading-[3.4rem] font-righteous font-medium">
               Trend
               <span className="text-primary-01">ify</span>.
             </h3>
@@ -32,7 +32,7 @@ const Navbar = () => {
               ].map(([tilte, path], index) => (
                 <li
                   key={index}
-                  className={`nav-item font-medium tracking-wide hover:text-primary-01 transition-all duration-300 ${
+                  className={`nav-item font-medium font-righteous tracking-wider hover:text-primary-01 transition-all duration-300 ${
                     routeLocation !== path ? "text-darker" : "text-primary-01"
                   } `}
                 >

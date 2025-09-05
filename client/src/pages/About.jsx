@@ -20,7 +20,7 @@ const About = () => {
             About Us
           </h1>
 
-          <p className="text-[2rem] leading-[2rem] text-darker font-bricolage font-bold">
+          <p className="text-[2rem] leading-[2rem] text-darker font-righteous font-medium">
             Trendify – Redefining fashion with comfort, quality, and style.
           </p>
         </div>
@@ -141,7 +141,7 @@ const About = () => {
                   <Icon color="#ff6a38" size={30} strokeWidth={2} />
                 </div>
 
-                <h4 className="text-[2rem] leading-[2.2rem] font-bold text-darker font-bricolage mt-[0.5rem]">
+                <h4 className="text-[2rem] leading-[2.2rem] font-medium text-darker font-righteous mt-[0.5rem]">
                   {title}
                 </h4>
 
@@ -154,7 +154,7 @@ const About = () => {
         </section>
 
         {/* Quotation Line */}
-        <section className="flex flex-col items-center justify-center px-[2%] pt-[5rem] pb-[7rem] text-[1.8rem] leading-[2.8rem] text-dark font-semibold italic font-bricolage text-center">
+        <section className="flex flex-col items-center justify-center px-[2%] pt-[5rem] pb-[7rem] text-[1.7rem] leading-[2.5rem] text-dark font-medium italic font-righteous text-center">
           <p className="border-t-[0.2rem] border-dark">
             At Trendify, it’s not just about fashion — it’s about expressing who
             you are.

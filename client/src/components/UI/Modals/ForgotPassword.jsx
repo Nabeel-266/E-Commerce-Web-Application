@@ -19,7 +19,7 @@ const ForgotPassword = ({
       }`}
     >
       <button
-        className="absolute top-0 left-0 text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[1rem] py-[0.5rem] rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+        className="absolute top-0 left-0 text-[1.8rem] text-light bg-darker font-semibold font-righteous px-[1rem] py-[0.5rem] rounded-lg cursor-pointer active:scale-[0.99] transition-all"
         onClick={() => setForgotPassModal(false)}
       >
         <MoveLeft size={30} />
@@ -32,12 +32,12 @@ const ForgotPassword = ({
       >
         {/* Header */}
         <header className="w-full px-[0.5rem] pb-[1.2rem] border-b-[0.1rem] border-secondary-01 flex items-center justify-between">
-          <h1 className="text-[2.4rem] leading-[2.4rem] text-darker font-bricolage font-semibold">
+          <h1 className="text-[2.4rem] leading-[2.4rem] text-darker font-righteous font-semibold">
             Forgot Password
           </h1>
 
           <button
-            className="text-[1.8rem] text-darker font-semibold font-bricolage rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+            className="text-[1.8rem] text-darker font-semibold font-righteous rounded-lg cursor-pointer active:scale-[0.99] transition-all"
             onClick={() => setForgotPassModal(false)}
           >
             <X />
@@ -46,11 +46,11 @@ const ForgotPassword = ({
 
         {/* Guidance Cont */}
         <div className="w-full flex flex-col items-start mt-[1.5rem]">
-          <h6 className="text-[1.7rem] font-semibold font-bricolage text-darker">
+          <h6 className="text-[1.7rem] font-semibold font-righteous text-darker">
             Have you forgotten your account password?
           </h6>
 
-          <p className="text-[1.4rem] leading-[2rem] font-medium font-bricolage text-darker mt-[0.5rem]">
+          <p className="text-[1.4rem] leading-[2rem] font-medium font-righteous text-darker mt-[0.5rem]">
             No worries! Just enter your email address below, and we’ll send you
             a verification code. Use that code to confirm your identity and
             reset your password securely.
@@ -58,7 +58,7 @@ const ForgotPassword = ({
 
           {/* Input Cont */}
           <div className="w-full space-y-[0.8rem] mt-[1.8rem]">
-            <p className="text-[1.5rem] leading-[2rem] font-medium font-bricolage text-darker">
+            <p className="text-[1.5rem] leading-[2rem] font-medium font-righteous text-darker">
               Please! Enter the email address associated with your account
             </p>
 
@@ -78,7 +78,7 @@ const ForgotPassword = ({
 
           <button
             onClick={() => sendVerificationCodeHandler()}
-            className="w-full text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[2rem] py-[0.8rem] mt-[1rem] rounded-full cursor-pointer active:scale-[0.99] transition-all"
+            className="w-full text-[1.8rem] text-light bg-darker font-semibold font-righteous px-[2rem] py-[0.8rem] mt-[1rem] rounded-full cursor-pointer active:scale-[0.99] transition-all"
           >
             Get Verification Code
           </button>

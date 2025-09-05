@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="col-span-2 px-[4%]">
           {/* LOGO */}
           <NavLink to="/">
-            <h3 className="text-darker text-[3.2rem] leading-[3.2rem] font-bricolage font-bold">
+            <h3 className="text-darker text-[3.2rem] leading-[3.2rem] font-righteous font-medium">
               Trend
               <span className="text-primary-01">ify</span>.
             </h3>

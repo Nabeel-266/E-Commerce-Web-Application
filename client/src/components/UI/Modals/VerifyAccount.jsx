@@ -10,7 +10,7 @@ const VerifyAccount = ({ verifyAccountModal, setVerifyAccountModal }) => {
       }`}
     >
       <button
-        className="absolute top-0 left-0 text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[1rem] py-[0.5rem] rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+        className="absolute top-0 left-0 text-[1.8rem] text-light bg-darker font-semibold font-righteous px-[1rem] py-[0.5rem] rounded-lg cursor-pointer active:scale-[0.99] transition-all"
         onClick={() => setVerifyAccountModal(false)}
       >
         <MoveLeft size={30} />
@@ -23,12 +23,12 @@ const VerifyAccount = ({ verifyAccountModal, setVerifyAccountModal }) => {
       >
         {/* Header */}
         <header className="w-full px-[0.5rem] pb-[1.3rem] border-b-[0.1rem] border-secondary-01 flex items-center justify-between">
-          <h1 className="text-[2.4rem] leading-[2.4rem] text-darker font-bricolage font-semibold">
+          <h1 className="text-[2.4rem] leading-[2.4rem] text-darker font-righteous font-semibold">
             Verify Account
           </h1>
 
           <button
-            className="text-[1.8rem] text-darker font-semibold font-bricolage rounded-lg cursor-pointer active:scale-[0.99] transition-all"
+            className="text-[1.8rem] text-darker font-semibold font-righteous rounded-lg cursor-pointer active:scale-[0.99] transition-all"
             onClick={() => setVerifyAccountModal(false)}
           >
             <X />
@@ -37,11 +37,11 @@ const VerifyAccount = ({ verifyAccountModal, setVerifyAccountModal }) => {
 
         {/* Content */}
         <div className="w-full flex flex-col items-start mt-[1.5rem]">
-          <h6 className="text-[1.7rem] font-semibold font-bricolage text-darker">
+          <h6 className="text-[1.7rem] font-semibold font-righteous text-darker">
             Enter the OTP sent to your email
           </h6>
 
-          <p className="text-[1.4rem] leading-[2rem] font-medium font-bricolage text-darker mt-[0.5rem]">
+          <p className="text-[1.4rem] leading-[2rem] font-medium font-righteous text-darker mt-[0.5rem]">
             We have sent 6 digit <b>OTP</b> to your email to verify your
             account. Please check your email and put your account verification
             OTP code here.
@@ -71,7 +71,7 @@ const VerifyAccount = ({ verifyAccountModal, setVerifyAccountModal }) => {
             {/* {error && error[0] === "name" && <FieldError error={error[1]} />} */}
           </div>
 
-          <button className="w-full text-[1.8rem] text-light bg-darker font-semibold font-bricolage px-[2rem] py-[0.8rem] mt-[1rem] rounded-full cursor-pointer active:scale-[0.99] transition-all">
+          <button className="w-full text-[1.8rem] text-light bg-darker font-semibold font-righteous px-[2rem] py-[0.8rem] mt-[1rem] rounded-full cursor-pointer active:scale-[0.99] transition-all">
             Verify OTP
           </button>
         </div>

@@ -22,7 +22,7 @@ const Login = () => {
       >
         {/* Login Form Cont */}
         <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[5rem] rounded-2xl">
-          <h2 className="text-[3.6rem] text-darker font-bold font-bricolage">
+          <h2 className="text-[3.6rem] text-darker font-bold font-righteous">
             Login
           </h2>
 
@@ -89,7 +89,7 @@ const Login = () => {
             </div>
 
             <button
-              className={`w-full flex items-center justify-center gap-[1rem] px-[3rem] py-[1.2rem] mt-[2.5rem] text-[1.8rem] leading-[1.8rem] tracking-wide font-medium font-bricolage rounded-full transition-all ${
+              className={`w-full flex items-center justify-center gap-[1rem] px-[3rem] py-[1.2rem] mt-[2.5rem] text-[1.8rem] leading-[1.8rem] tracking-wide font-medium font-righteous rounded-full transition-all ${
                 true
                   ? "text-light bg-darker active:scale-[0.98] active:bg-dark cursor-pointer"
                   : "bg-light text-dark cursor-not-allowed"

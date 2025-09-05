@@ -25,7 +25,7 @@ const Contact = () => {
             Contact Our Team
           </h2>
 
-          <p className="text-[1.8rem] text-dark font-medium font-bricolage">
+          <p className="text-[1.8rem] text-dark font-medium font-righteous">
             Just reach out how we can help you.
           </p>
 
@@ -38,7 +38,7 @@ const Contact = () => {
               <div className="input w-full">
                 <label
                   htmlFor="fullname"
-                  className="text-[1.6rem] leading-[2rem] font-semibold text-darker pl-[1.5rem] font-bricolage"
+                  className="text-[1.6rem] leading-[2rem] font-medium text-darker pl-[1.5rem] font-righteous"
                 >
                   Your Name
                 </label>
@@ -48,7 +48,7 @@ const Contact = () => {
                   id="fullname"
                   placeholder="Enter your full name"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
               <div className="input w-full">
                 <label
                   htmlFor="email"
-                  className="text-[1.6rem] leading-[2rem] font-semibold text-darker pl-[1.5rem] font-bricolage"
+                  className="text-[1.6rem] leading-[2rem] font-medium text-darker pl-[1.5rem] font-righteous"
                 >
                   Email Address
                 </label>
@@ -70,7 +70,7 @@ const Contact = () => {
                   id="email"
                   placeholder="Enter your email"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
               <div className="input w-full">
                 <label
                   htmlFor="phoneNumber"
-                  className="text-[1.6rem] leading-[2rem] font-semibold text-darker pl-[1.5rem] font-bricolage"
+                  className="text-[1.6rem] leading-[2rem] font-medium text-darker pl-[1.5rem] font-righteous"
                 >
                   Phone Number
                 </label>
@@ -92,7 +92,7 @@ const Contact = () => {
                   id="phoneNumber"
                   placeholder="Enter your contact number"
                   autoComplete="off"
-                  className={`w-full font-bricolage outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full input-appearance border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
+                  className={`w-full outline-none text-dark font-medium px-[1.5rem] py-[1rem] text-[1.6rem] leading-[1.6rem] rounded-full input-appearance border-[0.2rem] border-secondary-02 focus:border-darker placeholder:text-secondary-01 mt-[0.5rem]`}
                 />
               </div>
 
@@ -104,7 +104,7 @@ const Contact = () => {
               <div className="input w-full">
                 <label
                   htmlFor="message"
-                  className="text-[1.6rem] leading-[2rem] font-semibold text-darker pl-[1.5rem] font-bricolage"
+                  className="text-[1.6rem] leading-[2rem] font-medium text-darker pl-[1.5rem] font-righteous"
                 >
                   Message
                 </label>
@@ -140,7 +140,7 @@ const Contact = () => {
           Reach Out To Us
         </h6>
 
-        <h2 className="text-[2.5rem] tabletSm:text-[3rem] text-darker font-bold font-bricolage">
+        <h2 className="text-[2.5rem] text-darker font-medium font-righteous">
           We'd Love to Hear From You
         </h2>
 
@@ -154,11 +154,11 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col items-start font-medium">
-                <h6 className="text-[1.55rem] leading-[2rem] font-semibold text-darker font-bricolage">
+                <h6 className="text-[1.55rem] leading-[2rem] font-medium text-darker font-righteous">
                   Visit Our Outlet
                 </h6>
 
-                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-bricolage">
+                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-righteous">
                   Come see us at our outlet
                 </p>
 
@@ -177,11 +177,11 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col items-start font-medium">
-                <h6 className="text-[1.55rem] leading-[2rem] font-semibold text-darker font-bricolage">
+                <h6 className="text-[1.55rem] leading-[2rem] font-medium text-darker font-righteous">
                   Email Support
                 </h6>
 
-                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-bricolage">
+                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-righteous">
                   Our team is here to help you
                 </p>
 
@@ -198,11 +198,11 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col items-start font-medium">
-                <h6 className="text-[1.55rem] leading-[2rem] font-semibold text-darker font-bricolage">
+                <h6 className="text-[1.55rem] leading-[2rem] font-medium text-darker font-righteous">
                   Call us Directly
                 </h6>
 
-                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-bricolage">
+                <p className="text-[1.3rem] leading-[1.6rem] font-light text-dark font-righteous">
                   Monday to Friday from 9:00 AM to 6:00 PM
                 </p>
 
@@ -219,11 +219,11 @@ const Contact = () => {
 
           {/* Working Hours */}
           <div className="p-[2rem] flex flex-col items-start bg-secondary-04 rounded-2xl">
-            <h3 className="text-[2.2rem] text-darker font-bold font-bricolage mb-[2rem]">
+            <h3 className="text-[2.2rem] text-darker font-medium font-righteous mb-[2rem]">
               Working Hours
             </h3>
 
-            <p className="text-[1.4rem] leading-[2rem] text-dark font-medium font-bricolage">
+            <p className="text-[1.4rem] leading-[2rem] text-dark font-medium">
               Our team is here to assist you during our working hours. Feel free
               to reach out to us via phone or email, and we'll get back to you
               as soon as possible.
@@ -243,10 +243,10 @@ const Contact = () => {
                   key={index}
                   className="w-full flex items-center justify-between"
                 >
-                  <p className="text-[1.4rem] leading-[1.6rem] text-dark font-medium font-bricolage">
+                  <p className="text-[1.4rem] leading-[1.6rem] text-dark font-medium font-righteous">
                     {day}
                   </p>
-                  <p className="text-[1.4rem] leading-[1.6rem] text-darker font-semibold font-bricolage">
+                  <p className="text-[1.4rem] leading-[1.6rem] text-darker font-medium font-righteous">
                     {hours}
                   </p>
                 </div>
@@ -257,30 +257,30 @@ const Contact = () => {
 
         <div className="w-full flex items-center justify-between gap-[2rem] mt-[6rem]">
           <div className="p-[2rem] bg-secondary-04 rounded-xl space-y-[0.6rem]">
-            <h5 className="text-[1.8rem] leading-[2.4rem] font-semibold text-darker font-bricolage">
+            <h5 className="text-[1.8rem] leading-[2.4rem] font-medium text-darker font-righteous">
               Customer Support
             </h5>
-            <p className="text-[1.3rem] leading-[1.8rem] font-medium text-darker font-bricolage">
+            <p className="text-[1.4rem] leading-[2rem] font-medium text-darker">
               Our customer support team is available around the clock to address
               any concerns, queries, or complaints you may have.
             </p>
           </div>
 
           <div className="p-[2rem] bg-secondary-04 rounded-xl space-y-[0.6rem]">
-            <h5 className="text-[1.8rem] leading-[2.4rem] font-semibold text-darker font-bricolage">
+            <h5 className="text-[1.8rem] leading-[2.4rem] font-medium text-darker font-righteous">
               Feedback & Suggestions
             </h5>
-            <p className="text-[1.3rem] leading-[1.8rem] font-medium text-darker font-bricolage">
+            <p className="text-[1.4rem] leading-[2rem] font-medium text-darker">
               We value your feedback and are continously working to improve
               Trendify. Your input is crucial in shaping the future of Trendify.
             </p>
           </div>
 
           <div className="p-[2rem] bg-secondary-04 rounded-xl space-y-[0.6rem]">
-            <h5 className="text-[1.8rem] leading-[2.4rem] font-semibold text-darker font-bricolage">
+            <h5 className="text-[1.8rem] leading-[2.4rem] font-medium text-darker font-righteous">
               Media Inquiries
             </h5>
-            <p className="text-[1.3rem] leading-[1.8rem] font-medium text-darker font-bricolage">
+            <p className="text-[1.4rem] leading-[2rem] font-medium text-darker">
               For media related questions or press inquiries, please contact us
               at media@tredify.com or subscribe to our newsletter
             </p>
