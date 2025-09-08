@@ -1,4 +1,3 @@
-import React from "react";
 import BannerImage from "../assets/About_Banner.jpg";
 import ContentImage from "../assets/About_Content.jpg";
 
@@ -16,7 +15,7 @@ const About = () => {
         }}
       >
         <div className="w-full h-full backdrop-blur-[1rem] flex flex-col items-center justify-center gap-[1.5rem] relative z-[5]">
-          <h1 className="text-[4rem] leading-[4rem] text-darker tracking-wide font-federant font-bold">
+          <h1 className="text-[4rem] leading-[4rem] text-darker tracking-wide font-righteous font-medium">
             About Us
           </h1>
 
@@ -43,7 +42,7 @@ const About = () => {
 
           {/* Text Side */}
           <div className="w-[50%] flex flex-col items-start justify-start gap-[2rem] mt-[2rem]">
-            <h2 className="text-[3rem] leading-[3rem] font-federant font-bold text-darker tracking-wide">
+            <h2 className="text-[3rem] leading-[3rem] font-righteous font-medium text-darker tracking-wide">
               Who We Are
             </h2>
 
@@ -79,8 +78,9 @@ const About = () => {
 
         {/* Mission & Vision Section */}
         <section className="flex items-center justify-center gap-[8%] px-[4%] py-[2rem]">
-          <div className="py-[1rem]">
-            <h3 className="text-[2.6rem] font-federant font-semibold text-darker">
+          {/* Mission */}
+          <div className="py-[1rem] space-y-[1rem]">
+            <h3 className="text-[2.6rem] font-righteous font-medium text-darker">
               Our Mission
             </h3>
             <p className="text-[1.6rem] leading-[2.2rem] font-medium text-dark">
@@ -93,8 +93,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="py-[1rem]">
-            <h3 className="text-[2.6rem] font-federant font-semibold text-darker">
+          {/* Vision */}
+          <div className="py-[1rem] space-y-[1rem]">
+            <h3 className="text-[2.6rem] font-righteous font-medium text-darker">
               Our Vision
             </h3>
             <p className="text-[1.6rem] leading-[2.2rem] font-medium text-dark">
@@ -111,7 +112,7 @@ const About = () => {
 
         {/* Why Choose Us Section */}
         <section className="w-full flex flex-col items-start justify-start gap-[4rem] px-[4%] mt-[4rem]">
-          <h2 className="text-[3rem] leading-[3rem] font-federant font-bold text-darker tracking-wide">
+          <h2 className="text-[3rem] leading-[3rem] font-righteous font-medium text-darker tracking-wide">
             Why Choose Us
           </h2>
 

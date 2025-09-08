@@ -9,6 +9,10 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Layout/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserDashboard from "./pages/UserDashboard";
+import Account from "./components/UI/Account";
+import Orders from "./components/UI/Orders";
+import Wishlist from "./components/UI/Wishlist";
 
 const AppLayout = () => {
   return (
@@ -48,6 +52,23 @@ const browserRouter = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        element: <UserDashboard />,
+        children: [
+          {
+            path: "/user/account",
+            element: <Account />,
+          },
+          {
+            path: "/user/orders",
+            element: <Orders />,
+          },
+          {
+            path: "/user/wishlist",
+            element: <Wishlist />,
+          },
+        ],
       },
     ],
   },

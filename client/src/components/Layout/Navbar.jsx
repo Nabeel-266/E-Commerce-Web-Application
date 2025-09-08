@@ -1,4 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router";
+import { CircleUser, ShoppingBag, Heart, LogOut } from "lucide-react";
 
 // Import React Icons
 import SearchIcon from "../../assets/Icons/search.png";
@@ -50,7 +51,7 @@ const Navbar = () => {
 
         {/* Navbar Right */}
         <div className="w-[30%] h-full flex items-center justify-end">
-          <div className="authBtns flex items-center gap-[2rem] mt-1">
+          <div className="authBtns flex items-center gap-[1rem] mt-1">
             <Link to="/">
               <img
                 src={SearchIcon}
@@ -59,13 +60,51 @@ const Navbar = () => {
               />
             </Link>
 
-            <Link to="/login">
+            <div className="relative group p-[1rem]">
               <img
                 src={ProfileIcon}
                 alt="profile-icon"
-                className="w-[2rem] select-none"
+                className="w-[2rem] object-cover select-none"
               />
-            </Link>
+
+              <div className="min-w-[16rem] min-h-[10rem] p-[0.5rem] flex flex-col gap-[0.3rem] text-dark bg-light shadow-lg shadow-black/10 ring-1 ring-black/5 absolute top-[100%] -right-[50%] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 rounded-lg">
+                <>
+                  {[
+                    {
+                      Icon: CircleUser,
+                      name: "My Account",
+                      route: "/user/account",
+                    },
+                    {
+                      Icon: ShoppingBag,
+                      name: "Orders",
+                      route: "/user/orders",
+                    },
+                    { Icon: Heart, name: "WishList", route: "/user/wishlist" },
+                  ].map(({ Icon, name, route }, index) => (
+                    <Link
+                      key={index}
+                      to={route}
+                      className="w-full flex items-center gap-[0.8rem] px-[0.8rem] py-[0.3rem] hover:bg-secondary-04 hover:text-darker transition-all duration-200 rounded-lg"
+                    >
+                      <Icon size={18} />
+                      <span className="text-[1.6rem] font-medium whitespace-nowrap">
+                        {name}
+                      </span>
+                    </Link>
+                  ))}
+                </>
+
+                <hr className="text-secondary-03" />
+
+                <button className="appearance-none w-full flex items-center gap-[0.8rem] px-[0.8rem] py-[0.3rem] hover:bg-primary-01 hover:text-light transition-all duration-200 rounded-lg cursor-pointer">
+                  <LogOut size={18} />
+                  <span className="text-[1.6rem] font-medium whitespace-nowrap">
+                    Logout
+                  </span>
+                </button>
+              </div>
+            </div>
 
             <Link to="/" className="relative">
               <img

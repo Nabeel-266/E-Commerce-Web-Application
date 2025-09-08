@@ -1,14 +1,16 @@
-import React from "react";
+// Import Image
 import HeroMen from "../assets/Hero-Men.png";
 import HeroImageBg from "../assets/Hero-Bg.png";
-import TransitionButton from "../components/UI/Buttons/TransitionButton";
-
-// Import Image
 import FreeShipping from "../assets/Icons/free-shipping.png";
 import CustomerSupport from "../assets/Icons/customer-support.png";
 import EasyReturn from "../assets/Icons/easy-return.png";
 import SecurePayment from "../assets/Icons/secure-payment.png";
 import ProductDemoImg from "../assets/p_img2.png";
+
+// Import Components
+import LatestCollection from "../components/UI/LatestCollection";
+import TransitionButton from "../components/UI/Buttons/TransitionButton";
+import TopSelling from "../components/UI/TopSelling";
 
 const Home = () => {
   return (
@@ -33,7 +35,7 @@ const Home = () => {
           <TransitionButton
             text="EXPLORE &nbsp;FITS"
             bgColor="primary-01"
-            textColor="darker"
+            textColor="light"
             hoverBgColor="darker"
             hoverTextColor="light"
             px={2.5}
@@ -62,85 +64,13 @@ const Home = () => {
       </div>
 
       {/* Latest Collection Cont */}
-      <div className="flex flex-col gap-[4rem] px-[6%] ">
-        {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[0.2rem] pt-[5rem]">
-          <h2 className="text-[3.5rem] font-medium font-righteous tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
-            Latest Collections
-          </h2>
-
-          <p className="text-[1.8rem] leading-[1.8rem] font-normal text-dark tracking-wide">
-            Explore the latest trends and styles in our new collection.
-          </p>
-        </section>
-
-        {/* Section Items */}
-        <section className="pb-[7rem] px-[2%]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
-            {/* Collection Item Example */}
-            {Array.from({ length: 10 }).map((_, index) => (
-              <div key={index} className="bg-white rounded-lg">
-                <img
-                  src={ProductDemoImg}
-                  alt={`Collection Item ${index + 1}`}
-                  className="w-full h-[25rem] object-cover rounded-md relative z-[1]"
-                />
-                <h3 className="mt-[1rem] text-[1.5rem] leading-[2rem] font-medium text-dark mb-[0.5rem] whitespace-nowrap text-ellipsis overflow-hidden ">
-                  <abbr
-                    title="Boy Round Neck Pure Cotton T-Shirt"
-                    className="decoration-none no-underline"
-                  >
-                    Boy Round Neck Pure Cotton T-Shirt
-                  </abbr>
-                </h3>
-                <p className="text-[1.5rem] leading-[2rem] text-darker font-semibold mb-[0.5rem]">
-                  PKR 1,499
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="w-full px-[6%]">
+        <LatestCollection />
       </div>
 
       {/* Top Selling Cont */}
-      <div className="flex flex-col gap-[4rem] px-[6%]">
-        {/* Section Heading */}
-        <section className="flex flex-col items-center justify-center gap-[0.2rem] border-t-[0.1rem] border-secondary-04 pt-[4rem]">
-          <h2 className="text-[3.5rem] font-medium font-righteous tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
-            Top Selling
-          </h2>
-
-          <p className="text-[1.8rem] leading-[1.8rem] font-normal text-dark tracking-wide">
-            Discover our most popular products loved by customers.
-          </p>
-        </section>
-
-        {/* Section Items */}
-        <section className="pb-[7rem] px-[2%]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
-            {/* Collection Item Example */}
-            {Array.from({ length: 5 }).map((_, index) => (
-              <div key={index} className="bg-white rounded-lg">
-                <img
-                  src={ProductDemoImg}
-                  alt={`Collection Item ${index + 1}`}
-                  className="w-full h-[25rem] object-cover rounded-md relative z-[1]"
-                />
-                <h3 className="mt-[1rem] text-[1.5rem] leading-[2rem] font-medium text-dark mb-[0.5rem] whitespace-nowrap text-ellipsis overflow-hidden ">
-                  <abbr
-                    title="Boy Round Neck Pure Cotton T-Shirt"
-                    className="decoration-none no-underline"
-                  >
-                    Boy Round Neck Pure Cotton T-Shirt
-                  </abbr>
-                </h3>
-                <p className="text-[1.5rem] leading-[2rem] text-darker font-semibold mb-[0.5rem]">
-                  $64
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="w-full px-[6%]">
+        <TopSelling />
       </div>
 
       {/* Services & Support Cont */}
@@ -163,7 +93,7 @@ const Home = () => {
               {
                 image: FreeShipping,
                 title: "Free Shipping",
-                description: "On all orders over $50",
+                description: "On all orders over Rs. 2000",
               },
               {
                 image: CustomerSupport,

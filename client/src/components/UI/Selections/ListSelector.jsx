@@ -38,7 +38,7 @@ const ListSelector = ({ value, setValue, width, options }) => {
           >
             <ListboxOptions
               modal={false}
-              className="w-full max-h-[16rem] absolute z-[10] bg-light rounded-lg mt-[0.2rem] py-[0.2rem] shadow-lg shadow-black/10 ring-1 ring-black/5 overflow-auto scrollbar-dropdown-dark *:cursor-pointer"
+              className="w-full max-h-[16rem] absolute z-[10] bg-light rounded-lg mt-[0.2rem] py-[0.2rem] shadow-lg shadow-black/10 ring-1 ring-black/5 outline-none *:cursor-pointer"
             >
               {options.map((option, index) => (
                 <ListboxOption

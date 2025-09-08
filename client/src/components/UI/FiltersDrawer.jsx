@@ -105,14 +105,20 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
         </header>
 
         {/* Body */}
-        <div className="h-[calc(100dvh-7rem)] px-[1.5rem] pt-[1rem] pb-[2rem] scroll-auto overflow-y-scroll custom-scroll">
+        <div className="h-[calc(100dvh-7rem)] px-[1.5rem] pt-[1.5rem] pb-[2rem] scroll-auto overflow-y-scroll custom-scroll">
           <div className="w-full flex flex-col gap-[3rem] px-[0.5rem]">
             {/* Category */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Category
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Category
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-wrap items-start gap-x-[1rem] gap-y-[2.5rem]">
                 {categories.map((option) => (
                   <button
@@ -132,10 +138,16 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
 
             {/* Wear Type */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Wear Type
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Wear Type
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-wrap items-start gap-x-[1rem] gap-y-[1rem]">
                 {types.map((option, index) => (
                   <div key={index} className="flex">
@@ -162,10 +174,16 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
 
             {/* Price */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Price
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Price
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-col gap-[1rem]">
                 {priceRanges.map(({ text, minVal, maxVal }, index) => (
                   <button
@@ -193,10 +211,16 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
 
             {/* Fabric */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Fabric
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Fabric
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-wrap items-start gap-x-[1rem] gap-y-[1rem]">
                 {fabrics.map((option, index) => (
                   <div key={index} className="flex">
@@ -223,10 +247,16 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
 
             {/* Style */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Style
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Style
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-wrap items-start gap-x-[1rem] gap-y-[1rem]">
                 {styles.map((option, index) => (
                   <div key={index} className="flex">
@@ -251,10 +281,16 @@ const FiltersDrawer = ({ isOpen, onClose }) => {
 
             {/* Discounts */}
             <div className="w-full flex flex-col gap-[1.2rem]">
-              <h4 className="w-full text-[1.9rem] leading-[2.6rem] text-darker font-semibold px-[0.2rem]">
-                Discounts
-              </h4>
+              {/* Title */}
+              <div className="w-fit space-y-[0.2rem] px-[0.2rem]">
+                <h4 className="text-[1.9rem] leading-[2.6rem] text-darker font-semibold">
+                  Discounts
+                </h4>
 
+                <hr className="w-[80%] h-[0.2rem] bg-primary-01 border-0 rounded-full" />
+              </div>
+
+              {/* Options */}
               <div className="flex flex-col gap-[1rem]">
                 {discountRanges.map(({ text, minVal, maxVal }, index) => (
                   <button

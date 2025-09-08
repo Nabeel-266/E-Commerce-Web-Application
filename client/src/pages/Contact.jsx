@@ -21,7 +21,7 @@ const Contact = () => {
 
         {/* Cont Form Cont */}
         <div className="w-[48%] h-full pl-[3%] pr-[6%] flex flex-col">
-          <h2 className="text-[2.8rem] text-darker font-bold font-federant tracking-wide">
+          <h2 className="text-[2.8rem] text-darker font-medium font-righteous tracking-wide">
             Contact Our Team
           </h2>
 

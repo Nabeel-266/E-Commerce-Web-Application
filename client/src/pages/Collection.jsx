@@ -2,9 +2,10 @@ import { useCallback, useState } from "react";
 import { ListFilterPlus } from "lucide-react";
 import ListSelector from "../components/UI/Selections/ListSelector";
 import FiltersDrawer from "../components/UI/FiltersDrawer";
+import ProductCard from "../components/UI/ProductCard";
 
 const Collection = () => {
-  const [sortBy, setSortBy] = useState("Relevant");
+  const [sortBy, setSortBy] = useState("Relavent");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const openDrawer = useCallback(() => setIsDrawerOpen(true), []);
@@ -16,7 +17,7 @@ const Collection = () => {
         <div className="w-full flex flex-col">
           {/* Topbar */}
           <div className="w-full flex justify-between items-end px-[2%] pt-[2.5rem] pb-[1rem]">
-            <h4 className="text-[2.4rem] leading-[3rem] text-darker font-medium">
+            <h4 className="text-[2.4rem] leading-[3rem] text-darker font-medium font-righteous">
               ALL COLLECTIONS
             </h4>
 
@@ -43,7 +44,16 @@ const Collection = () => {
           </div>
 
           {/* Product Items Card Cont */}
-          <div className="w-full flex bg-amber-200"></div>
+          <div className="w-full flex px-[2%] pt-[2.5rem] pb-[5rem]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
+              {/* Collection Item Example */}
+              {Array.from({ length: 10 }).map((_, index) => (
+                <div key={index} className="bg-light rounded-lg">
+                  <ProductCard />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 

@@ -18,7 +18,7 @@ const Register = () => {
       >
         {/* Sign up Form Cont */}
         <div className="bg-transparent flex flex-col items-center justify-center p-[2rem] mb-[6rem] rounded-2xl">
-          <h2 className="text-[3.6rem] text-darker font-bold font-righteous">
+          <h2 className="text-[3.6rem] text-darker font-medium font-righteous">
             Sign Up
           </h2>
 
