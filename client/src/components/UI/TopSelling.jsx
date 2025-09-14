@@ -17,11 +17,9 @@ const TopSelling = () => {
       {/* Section Items */}
       <section className="w-full px-[2%]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
-          {/* Collection Item Example */}
+          {/* Collection Items */}
           {Array.from({ length: 5 }).map((_, index) => (
-            <div key={index} className="bg-white rounded-lg">
-              <ProductCard />
-            </div>
+            <ProductCard key={index} />
           ))}
         </div>
       </section>

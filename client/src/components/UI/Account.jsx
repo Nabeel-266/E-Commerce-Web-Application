@@ -1,5 +1,5 @@
 import { CalendarFold, Mail, MapPinCheck, Phone, Plus } from "lucide-react";
-import TransitionButton from "./Buttons/TransitionButton";
+import TransBtnBlack from "./Buttons/TransBtnBlack";
 
 const Account = () => {
   return (
@@ -35,30 +35,22 @@ const Account = () => {
         </div>
 
         <div className="flex items-center gap-[1rem]">
-          <TransitionButton
+          <TransBtnBlack
             text="Edit &nbsp;Profile"
-            bgColor="darker"
-            textColor="light"
-            hoverBgColor="primary-01"
-            hoverTextColor="light"
             px={1.5}
             py={0.8}
-            rounded={0.6}
+            rounded={0.4}
             fontSize={1.5}
-            fontWeight="medium"
+            fontWeight={500}
           />
 
-          <TransitionButton
+          <TransBtnBlack
             text="Change &nbsp;Password"
-            bgColor="darker"
-            textColor="light"
-            hoverBgColor="primary-01"
-            hoverTextColor="light"
             px={1.5}
             py={0.8}
-            rounded={0.6}
+            rounded={0.4}
             fontSize={1.5}
-            fontWeight="medium"
+            fontWeight={500}
           />
         </div>
       </div>
@@ -105,17 +97,13 @@ const Account = () => {
             Subscribe Status
           </h4>
 
-          <TransitionButton
+          <TransBtnBlack
             text="Subscribe"
-            bgColor="darker"
-            textColor="light"
-            hoverBgColor="primary-01"
-            hoverTextColor="light"
             px={1.5}
             py={0.8}
-            rounded={0.6}
+            rounded={0.4}
             fontSize={1.6}
-            fontWeight="medium"
+            fontWeight={500}
           />
         </div>
 

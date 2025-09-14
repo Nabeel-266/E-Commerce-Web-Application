@@ -26,7 +26,9 @@ const Orders = () => {
         ))}
       </div>
 
+      {/* Tab Panels */}
       <div className="w-full">
+        {/* Empty-Orders Cont */}
         <div className="w-full bg-[#f8f8f8] min-h-[50dvh] p-[1rem] pb-[4rem] flex flex-col items-center justify-center rounded-xl">
           <img
             src={EmptyOrders}

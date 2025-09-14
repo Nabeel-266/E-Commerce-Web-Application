@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Import Page & Components
+import ScrollToTop from "./components/Layout/ScrollToTop";
 import Navbar from "./components/Layout/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,11 +14,13 @@ import UserDashboard from "./pages/UserDashboard";
 import Account from "./components/UI/Account";
 import Orders from "./components/UI/Orders";
 import Wishlist from "./components/UI/Wishlist";
+import Product from "./pages/Product";
 
 const AppLayout = () => {
   return (
     <div className="w-full relative z-[1]">
       <Navbar />
+      <ScrollToTop />
       <Outlet />
       <Footer />
     </div>
@@ -44,6 +47,10 @@ const browserRouter = createBrowserRouter([
       {
         path: "/collection",
         element: <Collection />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product />,
       },
       {
         path: "/login",

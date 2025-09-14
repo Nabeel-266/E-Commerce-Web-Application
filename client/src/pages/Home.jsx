@@ -5,11 +5,10 @@ import FreeShipping from "../assets/Icons/free-shipping.png";
 import CustomerSupport from "../assets/Icons/customer-support.png";
 import EasyReturn from "../assets/Icons/easy-return.png";
 import SecurePayment from "../assets/Icons/secure-payment.png";
-import ProductDemoImg from "../assets/p_img2.png";
 
 // Import Components
 import LatestCollection from "../components/UI/LatestCollection";
-import TransitionButton from "../components/UI/Buttons/TransitionButton";
+import TransBtnColored from "../components/UI/Buttons/TransBtnColored";
 import TopSelling from "../components/UI/TopSelling";
 
 const Home = () => {
@@ -23,7 +22,7 @@ const Home = () => {
             Trends That Match Your Vibe
           </p>
 
-          <h1 className="text-[4.6rem] leading-[6rem] font-medium tracking-wider text font-righteous text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
+          <h1 className="text-[4.6rem] leading-[6rem] font-medium tracking-wide text font-righteous text-transparent bg-clip-text bg-gradient-to-r from-darker to-primary-01">
             Elegance Every Day
           </h1>
 
@@ -32,17 +31,13 @@ const Home = () => {
             effortless, bold, and always on trend
           </h5>
 
-          <TransitionButton
+          <TransBtnColored
             text="EXPLORE &nbsp;FITS"
-            bgColor="primary-01"
-            textColor="light"
-            hoverBgColor="darker"
-            hoverTextColor="light"
             px={2.5}
             py={1.2}
             rounded={10}
             fontSize={1.8}
-            fontWeight="semibold"
+            fontWeight={600}
           />
         </div>
 

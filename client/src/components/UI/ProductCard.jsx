@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import ProductDemoImg from "../../assets/p_img2.png";
 
 const ProductCard = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/product/123456789");
+  };
+
   return (
-    <>
+    <div onClick={handleClick} className="bg-light rounded-lg cursor-pointer">
       {/* Image */}
       <div className="w-full h-[25rem] overflow-hidden">
         <img
@@ -23,7 +30,7 @@ const ProductCard = () => {
       </h3>
 
       {/* Price */}
-      <div className="flex flex-col items-start gap-[rem]">
+      <div className="flex flex-col items-start">
         <p className="text-[1.7rem] leading-[2rem] text-darker font-semibold mb-[0.5rem]">
           Rs. 1,499
         </p>
@@ -32,7 +39,7 @@ const ProductCard = () => {
           Rs. 2,499
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -48,9 +48,7 @@ const Collection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1.5rem] ">
               {/* Collection Item Example */}
               {Array.from({ length: 10 }).map((_, index) => (
-                <div key={index} className="bg-light rounded-lg">
-                  <ProductCard />
-                </div>
+                <ProductCard key={index} />
               ))}
             </div>
           </div>
